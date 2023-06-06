@@ -5,7 +5,7 @@ type UserModel = Model<UserType, object>
 
 const userSchema = new Schema<UserType>(
   {
-    id: { type: String, required: true, unique: true },
+    userId: { type: String, required: true, unique: true },
     role: { type: String, required: true },
     password: { type: String, required: true },
   },
